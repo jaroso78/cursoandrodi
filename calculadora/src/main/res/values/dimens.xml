@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="dimensiones_boton_width">70dp</dimen>
+    <dimen name="dimensiones_boton_height">70dp</dimen>
+    <dimen name="boton_aling_top">15dp</dimen>
+    <dimen name="dimensiones_boton_operandos_width">60dp</dimen>
+    <dimen name="dimensiones_boton_operandos_height">60dp</dimen>
+</resources>
