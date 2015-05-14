@@ -8,6 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -16,11 +20,22 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       ListView tareas = (ListView) findViewById(R.id.TareaslistView);
-        String[] datos = new String[] {"Correr", "nadar", "comer"};
+        ListView tareas = (ListView) findViewById(R.id.TareaslistView);
+      /*  String[] datos = new String[] {"Correr", "nadar", "comer"};
 
         ListAdapter adaptador = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,datos );
-        tareas.setAdapter(adaptador);
+        tareas.setAdapter(adaptador);*/
+
+        List<Tarea> datos = new LinkedList<>();
+        datos.add (new Tarea("Correr", "Salir a correr"));
+        datos.add (new Tarea ("Nadar", "Salir a nadar a la playa"));
+        datos.add( new Tarea ("Ir en bicicleta","Salir con bici"));
+
+
+        TareasAdapter tareasAdapter = new  TareasAdapter(this, R.layout.tareas_list_item, datos);
+        tareas.setAdapter(tareasAdapter);
+
+
     }
 
     @Override
