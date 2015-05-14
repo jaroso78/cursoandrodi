@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adapter_view/adapter_view.iml" filepath="$PROJECT_DIR$/adapter_view/adapter_view.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadora/calculadora.iml" filepath="$PROJECT_DIR$/calculadora/calculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/navegacionentreactivitys/navegacionentreactivitys.iml" filepath="$PROJECT_DIR$/navegacionentreactivitys/navegacionentreactivitys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/terremotoslinkapp/terremotoslinkapp.iml" filepath="$PROJECT_DIR$/terremotoslinkapp/terremotoslinkapp.iml" />
     </modules>
   </component>
 </project>

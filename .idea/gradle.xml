@@ -9,9 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/adapter_view" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/calculadora" />
             <option value="$PROJECT_DIR$/navegacionentreactivitys" />
+            <option value="$PROJECT_DIR$/terremotoslinkapp" />
           </set>
         </option>
       </GradleProjectSettings>

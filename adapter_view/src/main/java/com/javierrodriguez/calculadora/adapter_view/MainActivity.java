@@ -1,12 +1,12 @@
-package com.javierrodriguez.navegacionentreactivitys;
+package com.javierrodriguez.calculadora.adapter_view;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -15,6 +15,12 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       ListView tareas = (ListView) findViewById(R.id.TareaslistView);
+        String[] datos = new String[] {"Correr", "nadar", "comer"};
+
+        ListAdapter adaptador = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,datos );
+        tareas.setAdapter(adaptador);
     }
 
     @Override
@@ -32,39 +38,10 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.prueba) {
-
-            Intent miInt = new Intent(this, MainActivity2Activity.class);
-            Informacion dato = new Informacion("Javier");
-
-            miInt.putExtra("dato", dato) ;
-            startActivityForResult(miInt, 0);
-
-
-
-
+        if (id == R.id.action_settings) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode==0) {
-
-
-            Toast toast1 = Toast.makeText(getApplicationContext(),  "Volvemos de la pantalla2", Toast.LENGTH_SHORT);
-
-            toast1.show();
-
-        }
-        }
-
-
-
-    }
-
+}
