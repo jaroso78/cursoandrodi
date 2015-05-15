@@ -38,9 +38,9 @@ public class Listadotareas extends Fragment {
 
 
     //Registramos el OnClickListener.
-    public void registerListViewTareaOnClikListener(View.OnClickListener listener){
+    public void registerListViewTareaOnClikListener(View.OnClickListener listen){
     ListView ListView= (ListView) getActivity().findViewById(R.id.TareasListView );
-    ListView.setOnClickListener(listener);
+    ListView.setOnClickListener(listen);
     }
 
 

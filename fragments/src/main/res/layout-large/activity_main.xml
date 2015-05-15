@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:name="com.javierrodriguez.fragments.Listadotareas"
-        android:id="@+id/fragment3"
+        android:id="@+id/fragmentListado_large"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.65" />
 
@@ -16,6 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="244dp"
         android:name="com.javierrodriguez.fragments.Detalle_frament"
-        android:id="@+id/fragment4"
+        android:id="@+id/fragmentDetalle_large"
         android:layout_weight="0.30" />
 </LinearLayout>

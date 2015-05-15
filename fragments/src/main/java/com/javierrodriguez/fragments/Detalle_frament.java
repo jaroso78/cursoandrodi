@@ -29,6 +29,14 @@ public class Detalle_frament extends Fragment {
         return inflater.inflate(R.layout.fragment_detalle_frament, container, false);
     }
 
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Tarea tarea = (Tarea) getActivity().getIntent().getSerializableExtra("tarea");
+        Actualizar_detalle(tarea);
+    }
+
     //Actualiza el arbol de componentes del fragment.
     public void Actualizar_detalle(Tarea tarea) {
 

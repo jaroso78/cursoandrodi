@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.javierrodriguez.fragments.Detalle_frament"
-        android:id="@+id/fragment2"
+        android:id="@+id/fragmentDetalle"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true" />
 </RelativeLayout>
