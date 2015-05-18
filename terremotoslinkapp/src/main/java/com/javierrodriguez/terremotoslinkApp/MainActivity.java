@@ -15,6 +15,7 @@ import android.widget.ImageButton;
 public class MainActivity extends ActionBarActivity {
 
     private ImageButton boton_cal;
+    private Button boton_bus;
 
 
     @Override
@@ -39,6 +40,21 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+
+        boton_bus= (Button) findViewById(R.id.button_busqueda);
+        boton_bus.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+                Intent miIntenListadoterremotos = new Intent(MainActivity.this , Listado_terremoto_activity.class);
+                startActivity(miIntenListadoterremotos);
+
+            }
+        });
+
+
+
 
     }
 

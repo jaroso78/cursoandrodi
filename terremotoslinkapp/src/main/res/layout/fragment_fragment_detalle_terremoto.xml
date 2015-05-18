@@ -1,15 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.javierrodriguez.fragments.Detalle_frament"
-    android:background="#ff99a0ff">
-
+    tools:context="com.javierrodriguez.terremotoslinkApp.Fragment_detalle_terremoto"
+    android:orientation="horizontal">
 
     <TextView
-    android:layout_width="match_parent"
-    android:layout_height="34dp"
-    android:text="New Text"
-    android:id="@+id/txNombre" />
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="New Text"
+        android:id="@+id/txNombre" />
 
     <TextView
         android:layout_width="match_parent"
