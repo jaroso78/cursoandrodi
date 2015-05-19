@@ -22,19 +22,24 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         miDialogoFragment = new MiDialogoFragment();
+
         miDialogoFragment.setOnClickListenerPositive(new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, "Se acepto 2º versión", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Se acepto 2 version", Toast.LENGTH_SHORT).show();
             }
         });
 
         miDialogoFragment.setOnClickListenerNegative(new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, "NO acepto 2º versión", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Se cancelo 2 version", Toast.LENGTH_SHORT).show();
+
             }
         });
+
+
+
 
         FragmentTransaction  fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.add(miDialogoFragment, "MiDialogoFragment");
@@ -59,7 +64,7 @@ public class MainActivity extends Activity {
         if (id == R.id.action_settings) {
 
 
-            miDialogoFragment.show(getFragmentManager(),"Mi dialogoFragment");
+            miDialogoFragment.show(getFragmentManager(),"MiDialogoFragment");
             return true;
         }
 

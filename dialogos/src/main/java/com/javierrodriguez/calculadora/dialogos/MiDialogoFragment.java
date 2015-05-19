@@ -15,7 +15,16 @@ import android.widget.Toast;
  */
 public class MiDialogoFragment extends DialogFragment {
 
-    private  AlertDialog.Builder factoria;
+
+      private   DialogInterface.OnClickListener listenBotonPositive;
+      private   DialogInterface.OnClickListener listenBotonNegative;
+
+
+
+
+
+
+   // private  AlertDialog.Builder factoria;
     public MiDialogoFragment() {
         // Required empty public constructor
 
@@ -29,7 +38,7 @@ public class MiDialogoFragment extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+/*
                 //Necesitamos una factoria.
       factoria = new AlertDialog.Builder(getActivity());
 
@@ -55,6 +64,7 @@ public class MiDialogoFragment extends DialogFragment {
 
                 //Creamos el dialogo.
         AlertDialog alertDialog = factoria.create();
+        */
     }
 
 
@@ -64,24 +74,47 @@ public class MiDialogoFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+        //Necesitamos una factoria.
+        AlertDialog.Builder factoria = new AlertDialog.Builder(getActivity());
+
+        //Configuramos la factoria
+
+        factoria.setMessage("Desea continuar");
+
+        factoria.setPositiveButton("Si",listenBotonPositive);
+        factoria.setNegativeButton("No",listenBotonNegative);
+
+        /*factoria.setPositiveButton("SI", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                Toast.makeText(getActivity(),"Se acepto",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+        factoria.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getActivity(),"No se acepto",Toast.LENGTH_SHORT).show();
+            }
+        });*/
+
         return factoria.create();
 
     }
 
     public void setOnClickListenerPositive(DialogInterface.OnClickListener listener){
-try {
-    factoria.setPositiveButton("Si", listener);
-}catch (Exception e){
-    e.printStackTrace();
-    }
+
+        this.listenBotonPositive= listener;
+
 }
 
+
+
     public void setOnClickListenerNegative(DialogInterface.OnClickListener listener){
-        try {
-            factoria.setNegativeButton("No", listener);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        this.listenBotonNegative= listener;
     }
 
 }
