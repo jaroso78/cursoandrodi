@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Frecuencia_entries">
+        <item>ninguno</item>
+        <item>1 hora</item>
+        <item>1 semana</item>
+        <item>1 ,es</item>
+    </string-array>
+
+    <string-array name="Frecuencia_entries_values">
+        <item>0</item>
+        <item>1</item>
+        <item>168</item>
+        <item>5040</item>
+    </string-array>
+
+
+
+
+
+</resources>

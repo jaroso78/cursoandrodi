@@ -1,9 +1,13 @@
 package com.javierrodriguez.calculadora.sharedpreferences;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -30,7 +34,32 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent (this, ConfiguracionActivity.class);
+            startActivity(intent);
             return true;
+        }
+
+        if (id ==R.id.leer_settings)
+        {
+            String mensaje = null;
+
+            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+            String preferencias = preferences.getString("Frecuencias", "0");
+            String url = preferences.getString("Url", "https://www.google.com");
+
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("Frecuencia","15");
+            editor.putString("Url","http://www.elmundo.es");
+
+            editor.commit();
+
+
+
+
+            mensaje ="Los valores de preferencia son: " + url + " Frecuencia " + preferencias;
+
+
+            Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);

@@ -1,39 +1,33 @@
-package com.javierrodriguez.navegacionentreactivitys;
+package com.javierrodriguez.calculadora.descarga_imagen;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.ImageView;
 
-import java.io.Serializable;
 
-
-public class MainActivity2Activity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activity2);
+        setContentView(R.layout.activity_main);
 
+       ImageView imagenView = (ImageView) findViewById(R.id.imageView);
 
-        Informacion recuperamos_variable_string = (Informacion) getIntent().getSerializableExtra("dato");
+        DescargaFichero descargaFichero = new DescargaFichero(imagenView,new ProgressDialog(this));
+        descargaFichero.execute("http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0022/3488/brand.gif?itok=SH16hpP7");
 
-
-
-        Toast toast1 = Toast.makeText(getApplicationContext(), recuperamos_variable_string.getNombre(), Toast.LENGTH_SHORT);
-
-        toast1.show();
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_activity2, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -46,11 +40,6 @@ public class MainActivity2Activity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-
-            Intent intent= new Intent();
-            intent.putExtra("resultado","el resultado es bueno");
-            setResult(Activity.RESULT_OK,intent);
-            finish();
             return true;
         }
 

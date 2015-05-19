@@ -13,9 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/calculadora" />
             <option value="$PROJECT_DIR$/context_menu" />
+            <option value="$PROJECT_DIR$/descarga_imagen" />
             <option value="$PROJECT_DIR$/dialogos" />
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/navegacionentreactivitys" />
+            <option value="$PROJECT_DIR$/parsexml" />
             <option value="$PROJECT_DIR$/sharedpreferences" />
             <option value="$PROJECT_DIR$/terremotoslinkapp" />
           </set>

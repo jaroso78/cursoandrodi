@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<ListPreference
+
+    android:entries="@array/Frecuencia_entries"
+    android:entryValues="@array/Frecuencia_entries_values"
+    android:key="Frecuencias"
+    android:title="Frecuencias de Actualización"
+    android:dialogTitle="Frecuencias de Actualización">
+
+    </ListPreference>
+
+
+
+
+    <EditTextPreference
+        android:key="Url"
+        android:title="Url del Feed">
+
+    </EditTextPreference>
+</PreferenceScreen>
+

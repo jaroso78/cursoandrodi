@@ -7,9 +7,11 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadora/calculadora.iml" filepath="$PROJECT_DIR$/calculadora/calculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/context_menu/context_menu.iml" filepath="$PROJECT_DIR$/context_menu/context_menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/descarga_imagen/descarga_imagen.iml" filepath="$PROJECT_DIR$/descarga_imagen/descarga_imagen.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogos/dialogos.iml" filepath="$PROJECT_DIR$/dialogos/dialogos.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/navegacionentreactivitys/navegacionentreactivitys.iml" filepath="$PROJECT_DIR$/navegacionentreactivitys/navegacionentreactivitys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parsexml/parsexml.iml" filepath="$PROJECT_DIR$/parsexml/parsexml.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharedpreferences/sharedpreferences.iml" filepath="$PROJECT_DIR$/sharedpreferences/sharedpreferences.iml" />
       <module fileurl="file://$PROJECT_DIR$/terremotoslinkapp/terremotoslinkapp.iml" filepath="$PROJECT_DIR$/terremotoslinkapp/terremotoslinkapp.iml" />
     </modules>
