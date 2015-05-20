@@ -1,13 +1,9 @@
-package com.javierrodriguez.calculadora.parsexml;
+package com.javierrodriguez.calculadora.basededatos;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import java.util.LinkedList;
 
 
 public class MainActivity extends Activity {
@@ -16,16 +12,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ListView listView = (ListView) findViewById(R.id.listView);
-
-        ArrayAdapter<Terremoto> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
-        listView.setAdapter(adapter);
-        DescargarXmlTerremoto descargarXmlTerremoto = new DescargarXmlTerremoto(adapter);
-        descargarXmlTerremoto.execute("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.atom");
-
-
-
     }
 
     @Override

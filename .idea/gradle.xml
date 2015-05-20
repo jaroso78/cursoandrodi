@@ -9,8 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/TerremotosAndroid" />
             <option value="$PROJECT_DIR$/adapter_view" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/basededatos" />
             <option value="$PROJECT_DIR$/calculadora" />
             <option value="$PROJECT_DIR$/context_menu" />
             <option value="$PROJECT_DIR$/descarga_imagen" />

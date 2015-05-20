@@ -1,1 +1,1 @@
-include ':app', ':calculadora', ':navegacionentreactivitys', ':terremotoslinkapp', ':adapter_view', ':context_menu', ':fragments', ':dialogos', ':sharedpreferences', ':descarga_imagen', ':parsexml'
+include ':app', ':calculadora', ':navegacionentreactivitys', ':terremotoslinkapp', ':TerremotosAndroid', ':adapter_view', ':context_menu', ':fragments', ':dialogos', ':sharedpreferences', ':descarga_imagen', ':parsexml', ':basededatos'
